@@ -1,5 +1,3 @@
-using System;
-
 namespace InsightsSettingsTest.Models
 {
     public class ErrorViewModel

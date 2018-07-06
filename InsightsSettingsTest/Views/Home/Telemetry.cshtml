@@ -1,0 +1,24 @@
+﻿@model InsightsSettingsTest.Models.TelemetryViewModel
+
+@{
+    ViewData["Title"] = "Telemetry";
+}
+
+<h2>Telemetry</h2>
+
+<div>
+    <h4>TelemetryViewModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.UserName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.UserName)
+        </dd>
+    </dl>
+</div>
+<div>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    <a asp-action="Index">Back to List</a>
+</div>

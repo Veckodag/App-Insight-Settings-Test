@@ -33,5 +33,13 @@ namespace InsightsSettingsTest.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
+        public IActionResult Telemetry()
+        {
+            TelemetryViewModel telemetryViewModel = new TelemetryViewModel();                       
+
+
+            return View(telemetryViewModel);
+        }
     }
 }
